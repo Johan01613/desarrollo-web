@@ -1,0 +1,173 @@
+*{
+    font-family: "Lobster Two", sans-serif;
+}
+body {
+    background-image: url("./img/Fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.myButton{
+    background: none;
+    border: none;
+    background-color: #11f0c3;
+    color: #4750f4;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 10px;
+}
+.myButton:hover{
+    background-color: #4750f4;
+    color: #11f0c3;
+}
+.myTittle{
+    font-size: 5rem;
+    color: #28e4ed;
+    margin-bottom: 40px;
+    font-family: "Mea Culpa", cursive;
+}
+p{
+    font-size: 1.5rem;
+    color: #160c31;
+
+}
+.myTittlecard{
+    font-size: 2rem;
+    color: #8e27c5;
+    font-family: "Mea Culpa", cursive;
+}
+@media(max-width:876px){
+    .myTittle{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
+.contentLand{
+  /* From https://css.glass */
+  background: rgba(192, 166, 166, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+   border: 1px solid rgba(192, 166, 166, 0.3);
+}
+.contenido{
+    background-color: rgba(192, 166, 166, 0.18);
+    padding: 2rem 15rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.formulario{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    grid-template-areas: 
+    'label1 field1'
+    'label2 field2'
+    'blanco boton';
+}
+.campo1{
+    display: flex;
+    align-items: center;
+    justify-content: end; 
+}
+.campo2{
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+}
+.campo3{
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+}
+.campo4{
+    display: flex;
+    align-items: center;
+    justify-content: end; 
+}
+
+.formulario-registro{
+    display: grid;
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: repeat(2, 2fr);
+    gap: 3rem;
+    grid-template-areas: 
+         'nombre apellido'
+         'email email2'
+         'contraseña contraseña2'
+         'boton1 boton2';
+}
+.registro_field{
+    border: none;
+    border-bottom: .2rem solid #098b8b;
+    padding: 1rem;
+    color: #050808;
+    background-color: transparent;
+    width: 90%;
+}
+.campoIzq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.campoDer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.campo_field{
+    border: none;
+    border-bottom: .2rem solid #0d6969;
+    padding: 1rem;
+    color:#120230;
+    background-color: transparent;
+    width: 100%;
+}
+::-webkit-input-placeholder{
+    color: #ddf4f4;
+    text-transform: uppercase;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteheadings);
+    color: #17202A;
+    background-color: #030303;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton--primario{
+    background-color: #F8F9F9;
+    color: #17202A;
+}
+.boton--secundario{
+    background-color: transparent;
+    border: .1rem solid #17202A;
+    color: #F8F9F9;
+}
+.boton--primario:hover{
+    background-color: #35daf4;
+    color: #02000a;
+}
+.boton--secundario:hover{
+    background-color: #35daf4;
+    color: #000808;
+}
